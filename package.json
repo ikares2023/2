@@ -1,0 +1,14 @@
+{
+  "name": "rp-cvd",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Выписка рецептов для лечения ССЗ",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.9.0"
+  }
+}

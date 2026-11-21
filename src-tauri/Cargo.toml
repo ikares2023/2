@@ -1,0 +1,19 @@
+[package]
+name = "rp-cvd"
+version = "2.1.0"
+description = "Выписка рецептов для лечения ССЗ"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# on_new_window появился в Tauri 2.9 — нужен для окна рецепта (window.open)
+tauri = { version = "2.9", features = [] }
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true
